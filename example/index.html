@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual DOM Experiment</title>
+    <style>
+        body {
+            font-family: system-ui;
+            line-height: 1.5;
+        }
+
+        .is-done {
+          text-decoration: line-through;
+          color: gray;
+        }
+    </style>
+</head>
+<body>
+    <form id="add">
+        <input type="text" id="add-label" placeholder="Enter a label …" />
+        <input type="submit" value="Add new Todo" />
+    </form>
+
+    <form id="toggle">
+        <input type="number" id="toggle-index" placeholder="Enter number of item …" />
+        <input type="submit" value="Toggle state" />
+    </form>
+
+    <form id="delete">
+        <input type="number" id="delete-index" placeholder="Enter number of item …" />
+        <input type="submit" value="Delete Todo" />
+    </form>
+
+    <div id="app"></div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
